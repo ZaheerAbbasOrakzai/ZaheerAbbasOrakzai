@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="Elite Performance Metrics">
+<defs>
+<linearGradient id="bg-m" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0a0e27"/>
+<stop offset="1" stop-color="#1a1240"/>
+</linearGradient>
+<linearGradient id="glass-m" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+<stop offset=".5" stop-color="#ffffff" stop-opacity=".06"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity=".18"/>
+</linearGradient>
+<linearGradient id="border-m" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffffff" stop-opacity=".65"/>
+<stop offset=".3" stop-color="#22D3EE" stop-opacity=".55"/>
+<stop offset=".7" stop-color="#A855F7" stop-opacity=".55"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity=".45"/>
+</linearGradient>
+<linearGradient id="val-grad" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#67E8F9"/>
+<stop offset=".5" stop-color="#C084FC"/>
+<stop offset="1" stop-color="#F9A8D4"/>
+</linearGradient>
+<linearGradient id="shine-m" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+<stop offset=".5" stop-color="#ffffff" stop-opacity=".35"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="orb-c"><stop offset="0" stop-color="#22D3EE" stop-opacity=".6"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+<radialGradient id="orb-p"><stop offset="0" stop-color="#A855F7" stop-opacity=".6"/><stop offset="1" stop-color="#A855F7" stop-opacity="0"/></radialGradient>
+<filter id="glow-m" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="6"/>
+<feComposite in="SourceGraphic" in2="blur" operator="over"/>
+</filter>
+<filter id="shadow-m" x="-25%" y="-25%" width="150%" height="180%">
+<feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity=".7"/>
+<feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#22D3EE" flood-opacity=".3"/>
+</filter>
+<filter id="blur-m"><feGaussianBlur stdDeviation="50"/></filter>
+<clipPath id="clip-m"><rect x="0" y="0" width="224" height="170" rx="24"/></clipPath>
+</defs>
+
+<rect width="1200" height="240" fill="url(#bg-m)"/>
+
+<!-- Animated background orbs -->
+<g filter="url(#blur-m)">
+<circle cx="280" cy="120" r="200" fill="url(#orb-c)"><animate attributeName="cx" values="280;600;280" dur="16s" repeatCount="indefinite"/></circle>
+<circle cx="920" cy="120" r="220" fill="url(#orb-p)"><animate attributeName="cx" values="920;650;920" dur="18s" repeatCount="indefinite"/></circle>
+</g>
+
+<g font-family="'SF Pro Display','Segoe UI',Helvetica,Arial,sans-serif" text-anchor="middle">
+<!-- Metric Card 1 -->
+<g transform="translate(15 35)">
+<animateTransform attributeName="transform" type="translate" values="15 35;15 25;15 35" dur="6s" repeatCount="indefinite"/>
+<g filter="url(#shadow-m)">
+<rect width="224" height="170" rx="24" fill="url(#glass-m)" stroke="url(#border-m)" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip-m)">
+<rect x="-150" width="110" height="170" fill="url(#shine-m)" transform="skewX(-18)">
+<animate attributeName="x" values="-150;350" dur="8s" repeatCount="indefinite"/>
+</rect>
+</g>
+<g filter="url(#glow-m)">
+<text x="112" y="75" font-size="48" font-weight="900" fill="url(#val-grad)">45+</text>
+</g>
+<text x="112" y="110" font-size="16" font-weight="700" fill="#E5E7EB">Public Repositories</text>
+<text x="112" y="135" font-size="12" font-weight="500" fill="#94A3B8">ML · Agentic AI · Full-Stack</text>
+<g opacity=".6">
+<rect x="20" y="150" width="80" height="4" rx="2" fill="#22D3EE"><animate attributeName="width" values="0;80;0" dur="3s" repeatCount="indefinite"/></rect>
+<rect x="110" y="150" width="94" height="4" rx="2" fill="#A855F7"><animate attributeName="width" values="0;94;0" dur="3s" begin="-1.5s" repeatCount="indefinite"/></rect>
+</g>
+</g>
+
+<!-- Metric Card 2 -->
+<g transform="translate(253 35)">
+<animateTransform attributeName="transform" type="translate" values="253 35;253 25;253 35" dur="6s" begin="-1.2s" repeatCount="indefinite"/>
+<g filter="url(#shadow-m)">
+<rect width="224" height="170" rx="24" fill="url(#glass-m)" stroke="url(#border-m)" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip-m)">
+<rect x="-150" width="110" height="170" fill="url(#shine-m)" transform="skewX(-18)">
+<animate attributeName="x" values="-150;350" dur="8s" begin="-1.2s" repeatCount="indefinite"/>
+</rect>
+</g>
+<g filter="url(#glow-m)">
+<text x="112" y="75" font-size="46" font-weight="900" fill="url(#val-grad)">99.55%</text>
+</g>
+<text x="112" y="110" font-size="16" font-weight="700" fill="#E5E7EB">Weighted F1 Score</text>
+<text x="112" y="135" font-size="12" font-weight="500" fill="#94A3B8">Traffic · 87K+ rows · 12 cities</text>
+<g opacity=".6">
+<rect x="30" y="150" width="70" height="4" rx="2" fill="#F472B6"><animate attributeName="width" values="0;70;0" dur="3s" repeatCount="indefinite"/></rect>
+<rect x="110" y="150" width="84" height="4" rx="2" fill="#34D399"><animate attributeName="width" values="0;84;0" dur="3s" begin="-1.5s" repeatCount="indefinite"/></rect>
+</g>
+</g>
+
+<!-- Metric Card 3 -->
+<g transform="translate(491 35)">
+<animateTransform attributeName="transform" type="translate" values="491 35;491 25;491 35" dur="6s" begin="-2.4s" repeatCount="indefinite"/>
+<g filter="url(#shadow-m)">
+<rect width="224" height="170" rx="24" fill="url(#glass-m)" stroke="url(#border-m)" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip-m)">
+<rect x="-150" width="110" height="170" fill="url(#shine-m)" transform="skewX(-18)">
+<animate attributeName="x" values="-150;350" dur="8s" begin="-2.4s" repeatCount="indefinite"/>
+</rect>
+</g>
+<g filter="url(#glow-m)">
+<text x="112" y="75" font-size="46" font-weight="900" fill="url(#val-grad)">99.97%</text>
+</g>
+<text x="112" y="110" font-size="16" font-weight="700" fill="#E5E7EB">Test Accuracy</text>
+<text x="112" y="135" font-size="12" font-weight="500" fill="#94A3B8">Diet classifier · Precision 1.00</text>
+<g opacity=".6">
+<rect x="25" y="150" width="75" height="4" rx="2" fill="#8B5CF6"><animate attributeName="width" values="0;75;0" dur="3s" repeatCount="indefinite"/></rect>
+<rect x="110" y="150" width="89" height="4" rx="2" fill="#FBBF24"><animate attributeName="width" values="0;89;0" dur="3s" begin="-1.5s" repeatCount="indefinite"/></rect>
+</g>
+</g>
+
+<!-- Metric Card 4 -->
+<g transform="translate(729 35)">
+<animateTransform attributeName="transform" type="translate" values="729 35;729 25;729 35" dur="6s" begin="-3.6s" repeatCount="indefinite"/>
+<g filter="url(#shadow-m)">
+<rect width="224" height="170" rx="24" fill="url(#glass-m)" stroke="url(#border-m)" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip-m)">
+<rect x="-150" width="110" height="170" fill="url(#shine-m)" transform="skewX(-18)">
+<animate attributeName="x" values="-150;350" dur="8s" begin="-3.6s" repeatCount="indefinite"/>
+</rect>
+</g>
+<g filter="url(#glow-m)">
+<text x="112" y="75" font-size="46" font-weight="900" fill="url(#val-grad)">34,000+</text>
+</g>
+<text x="112" y="110" font-size="16" font-weight="700" fill="#E5E7EB">Curated Narrations</text>
+<text x="112" y="135" font-size="12" font-weight="500" fill="#94A3B8">Hadith authenticity corpus</text>
+<g opacity=".6">
+<rect x="20" y="150" width="80" height="4" rx="2" fill="#06B6D4"><animate attributeName="width" values="0;80;0" dur="3s" repeatCount="indefinite"/></rect>
+<rect x="110" y="150" width="94" height="4" rx="2" fill="#10B981"><animate attributeName="width" values="0;94;0" dur="3s" begin="-1.5s" repeatCount="indefinite"/></rect>
+</g>
+</g>
+
+<!-- Metric Card 5 -->
+<g transform="translate(967 35)">
+<animateTransform attributeName="transform" type="translate" values="967 35;967 25;967 35" dur="6s" begin="-4.8s" repeatCount="indefinite"/>
+<g filter="url(#shadow-m)">
+<rect width="224" height="170" rx="24" fill="url(#glass-m)" stroke="url(#border-m)" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip-m)">
+<rect x="-150" width="110" height="170" fill="url(#shine-m)" transform="skewX(-18)">
+<animate attributeName="x" values="-150;350" dur="8s" begin="-4.8s" repeatCount="indefinite"/>
+</rect>
+</g>
+<g filter="url(#glow-m)">
+<text x="112" y="75" font-size="56" font-weight="900" fill="url(#val-grad)">3+</text>
+</g>
+<text x="112" y="110" font-size="16" font-weight="700" fill="#E5E7EB">Freelance Platforms</text>
+<text x="112" y="135" font-size="12" font-weight="500" fill="#94A3B8">Upwork · Freelancer · PPH</text>
+<g opacity=".6">
+<rect x="35" y="150" width="65" height="4" rx="2" fill="#EF4444"><animate attributeName="width" values="0;65;0" dur="3s" repeatCount="indefinite"/></rect>
+<rect x="110" y="150" width="79" height="4" rx="2" fill="#F59E0B"><animate attributeName="width" values="0;79;0" dur="3s" begin="-1.5s" repeatCount="indefinite"/></rect>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Elite Footer">
+<defs>
+<linearGradient id="bg-f" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0a0e27"/>
+<stop offset="1" stop-color="#050816"/>
+</linearGradient>
+<linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#22D3EE" stop-opacity=".45"/>
+<stop offset=".5" stop-color="#8B5CF6" stop-opacity=".45"/>
+<stop offset="1" stop-color="#EC4899" stop-opacity=".45"/>
+</linearGradient>
+<linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#34D399" stop-opacity=".4"/>
+<stop offset=".5" stop-color="#22D3EE" stop-opacity=".4"/>
+<stop offset="1" stop-color="#A855F7" stop-opacity=".4"/>
+</linearGradient>
+<linearGradient id="wave3" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#FBBF24" stop-opacity=".35"/>
+<stop offset=".5" stop-color="#F472B6" stop-opacity=".35"/>
+<stop offset="1" stop-color="#06B6D4" stop-opacity=".35"/>
+</linearGradient>
+<linearGradient id="text-f" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#67E8F9"/>
+<stop offset=".5" stop-color="#C084FC"/>
+<stop offset="1" stop-color="#F9A8D4"/>
+</linearGradient>
+<filter id="glow-f">
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in="SourceGraphic" in2="blur" operator="over"/>
+</filter>
+</defs>
+
+<rect width="1200" height="200" fill="url(#bg-f)"/>
+
+<!-- Triple-layered animated waves -->
+<path fill="url(#wave3)" d="M0 120 C180 70 360 170 540 120 S900 70 1080 120 S1440 170 1620 120 S1980 70 2160 120 V200 H0Z">
+<animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="18s" repeatCount="indefinite"/>
+</path>
+<path fill="url(#wave2)" d="M0 100 C180 50 360 150 540 100 S900 50 1080 100 S1440 150 1620 100 S1980 50 2160 100 V200 H0Z">
+<animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
+</path>
+<path fill="url(#wave1)" d="M0 130 C180 80 360 180 540 130 S900 80 1080 130 S1440 180 1620 130 S1980 80 2160 130 V200 H0Z">
+<animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="11s" repeatCount="indefinite"/>
+</path>
+
+<!-- Elite tagline with glow -->
+<g filter="url(#glow-f)">
+<text x="600" y="75" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="url(#text-f)">
+Data → Model → API → Product
+</text>
+</g>
+
+<!-- Subtitle -->
+<text x="600" y="110" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="13" letter-spacing="4" fill="#94A3B8" font-weight="600">
+ZAHEER ABBAS ◆ AI/ML ENGINEER ◆ PAKISTAN
+</text>
+
+<!-- Floating status indicator -->
+<g opacity=".8">
+<circle cx="450" cy="107" r="5" fill="#10B981">
+<animate attributeName="opacity" values=".4;1;.4" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="462" y="112" font-family="'SF Pro Display',sans-serif" font-size="12" fill="#10B981" font-weight="600">AVAILABLE FOR HIRE</text>
+</g>
+
+<!-- Decorative dots -->
+<g opacity=".5">
+<circle cx="100" cy="40" r="3" fill="#22D3EE"><animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="1100" cy="50" r="2" fill="#A855F7"><animate attributeName="r" values="2;3;2" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="1050" cy="30" r="3" fill="#F472B6"><animate attributeName="r" values="2;5;2" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle cx="150" cy="55" r="2" fill="#34D399"><animate attributeName="r" values="2;4;2" dur="4.5s" repeatCount="indefinite"/></circle>
+</g>
+</svg>

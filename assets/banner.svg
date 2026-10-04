@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Zaheer Abbas - Elite AI/ML Engineer">
+<defs>
+<linearGradient id="bg-elite" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0a0e27"/>
+<stop offset=".3" stop-color="#1a1240"/>
+<stop offset=".7" stop-color="#0d1b3e"/>
+<stop offset="1" stop-color="#050a1e"/>
+</linearGradient>
+<radialGradient id="glow-cyan"><stop offset="0" stop-color="#22D3EE" stop-opacity=".9"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow-purple"><stop offset="0" stop-color="#C084FC" stop-opacity=".85"/><stop offset="1" stop-color="#A855F7" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow-pink"><stop offset="0" stop-color="#F472B6" stop-opacity=".75"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow-emerald"><stop offset="0" stop-color="#34D399" stop-opacity=".7"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass-gradient" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffffff" stop-opacity=".25"/>
+<stop offset=".5" stop-color="#ffffff" stop-opacity=".08"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity=".15"/>
+</linearGradient>
+<linearGradient id="border-elite" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffffff" stop-opacity=".7"/>
+<stop offset=".3" stop-color="#22D3EE" stop-opacity=".6"/>
+<stop offset=".7" stop-color="#A855F7" stop-opacity=".6"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity=".5"/>
+</linearGradient>
+<linearGradient id="text-gradient" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset=".3" stop-color="#67E8F9"/>
+<stop offset=".7" stop-color="#C084FC"/>
+<stop offset="1" stop-color="#F9A8D4"/>
+</linearGradient>
+<linearGradient id="shine-sweep" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+<stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<pattern id="elite-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+<path d="M50 0 L0 0 0 50" fill="none" stroke="#22D3EE" stroke-opacity=".12" stroke-width="1"/>
+<circle cx="0" cy="0" r="2" fill="#22D3EE" fill-opacity=".3"/>
+<animateTransform attributeName="patternTransform" type="translate" from="0 0" to="50 50" dur="12s" repeatCount="indefinite"/>
+</pattern>
+<pattern id="hex-pattern" width="60" height="52" patternUnits="userSpaceOnUse">
+<path d="M30 0 L52 15 52 37 30 52 8 37 8 15 Z" fill="none" stroke="#A855F7" stroke-opacity=".08" stroke-width="1"/>
+<animateTransform attributeName="patternTransform" type="translate" from="0 0" to="60 52" dur="20s" repeatCount="indefinite"/>
+</pattern>
+<filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="8" result="blur"/>
+<feComposite in="SourceGraphic" in2="blur" operator="over"/>
+</filter>
+<filter id="ultra-shadow" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000" flood-opacity=".8"/>
+<feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#22D3EE" flood-opacity=".4"/>
+</filter>
+<filter id="blur-bg" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="60"/>
+</filter>
+<clipPath id="card-clip">
+<rect x="50" y="60" width="1100" height="380" rx="32"/>
+</clipPath>
+</defs>
+
+<!-- Background -->
+<rect width="1200" height="500" fill="url(#bg-elite)"/>
+<rect width="1200" height="500" fill="url(#elite-grid)"/>
+<rect width="1200" height="500" fill="url(#hex-pattern)"/>
+
+<!-- Animated background orbs -->
+<g filter="url(#blur-bg)">
+<circle r="220" fill="url(#glow-cyan)" cx="200" cy="150">
+<animate attributeName="cx" values="200;450;200" dur="18s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="150;320;150" dur="15s" repeatCount="indefinite"/>
+<animate attributeName="r" values="220;260;220" dur="12s" repeatCount="indefinite"/>
+</circle>
+<circle r="240" fill="url(#glow-purple)" cx="1000" cy="350">
+<animate attributeName="cx" values="1000;750;1000" dur="20s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="350;180;350" dur="17s" repeatCount="indefinite"/>
+<animate attributeName="r" values="240;200;240" dur="14s" repeatCount="indefinite"/>
+</circle>
+<circle r="180" fill="url(#glow-pink)" cx="600" cy="450">
+<animate attributeName="cx" values="600;900;600" dur="22s" repeatCount="indefinite"/>
+<animate attributeName="r" values="180;220;180" dur="16s" repeatCount="indefinite"/>
+</circle>
+<circle r="160" fill="url(#glow-emerald)" cx="950" cy="100">
+<animate attributeName="cx" values="950;650;950" dur="19s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="100;250;100" dur="13s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<!-- Elite glass morphism card with multiple depth layers -->
+<rect x="78" y="88" width="1100" height="380" rx="32" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/>
+<rect x="64" y="74" width="1100" height="380" rx="32" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".18" stroke-width="1.5"/>
+<g filter="url(#ultra-shadow)">
+<rect x="50" y="60" width="1100" height="380" rx="32" fill="url(#glass-gradient)" stroke="url(#border-elite)" stroke-width="2"/>
+</g>
+
+<!-- Animated shine sweep -->
+<g clip-path="url(#card-clip)">
+<rect x="-400" y="60" width="250" height="380" fill="url(#shine-sweep)" transform="skewX(-18)">
+<animate attributeName="x" values="-400;1400" dur="5s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+<!-- Window controls -->
+<g filter="url(#glow-strong)">
+<circle cx="85" cy="95" r="7" fill="#EF4444"/>
+<circle cx="110" cy="95" r="7" fill="#F59E0B"/>
+<circle cx="135" cy="95" r="7" fill="#10B981"/>
+</g>
+
+<!-- Elite header text -->
+<text x="100" y="145" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="14" letter-spacing="4" fill="#67E8F9" fill-opacity=".95" font-weight="600">
+<tspan>◆ ELITE AI/ML ENGINEER</tspan>
+<tspan x="100" dy="22" fill="#A855F7" fill-opacity=".9">◆ B.S. COMPUTER SCIENCE · COMSATS UNIVERSITY</tspan>
+<tspan x="100" dy="22" fill="#34D399" fill-opacity=".85">◆ 4 YEARS EXPERIENCE · 45+ PRODUCTION PROJECTS</tspan>
+</text>
+
+<!-- Main name with premium gradient -->
+<g filter="url(#glow-strong)">
+<text x="98" y="260" font-family="'Segoe UI','SF Pro Display',Helvetica,Arial,sans-serif" font-size="82" font-weight="900" letter-spacing="-2" fill="url(#text-gradient)">
+Zaheer Abbas
+</text>
+</g>
+
+<!-- Rotating expertise showcase -->
+<g font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="28" font-weight="700" fill="#22D3EE">
+<text x="100" y="320" opacity="0">
+<tspan fill="#22D3EE">▸</tspan> Applied Machine Learning
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.05;.18;.23;1" dur="20s" repeatCount="indefinite"/>
+</text>
+<text x="100" y="320" opacity="0">
+<tspan fill="#A855F7">▸</tspan> LLM &amp; Agentic AI Systems
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.2;.25;.38;.43;1" dur="20s" repeatCount="indefinite"/>
+</text>
+<text x="100" y="320" opacity="0">
+<tspan fill="#F472B6">▸</tspan> Computer Vision &amp; Explainable AI
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.4;.45;.58;.63;1" dur="20s" repeatCount="indefinite"/>
+</text>
+<text x="100" y="320" opacity="0">
+<tspan fill="#34D399">▸</tspan> Hybrid RAG &amp; Multi-Agent Orchestration
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.6;.65;.78;.83;1" dur="20s" repeatCount="indefinite"/>
+</text>
+<text x="100" y="320" opacity="0">
+<tspan fill="#FBBF24">▸</tspan> Full-Stack &amp; Mobile Engineering
+<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.8;.85;.98;1" dur="20s" repeatCount="indefinite"/>
+</text>
+</g>
+
+<!-- Premium tech badges with glow -->
+<g font-family="'SF Pro Display','Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#E5E7EB" text-anchor="middle" filter="url(#glow-strong)">
+<g><rect x="100" y="358" width="110" height="38" rx="19" fill="#22D3EE" fill-opacity=".18" stroke="#22D3EE" stroke-opacity=".6" stroke-width="2"/><text x="155" y="383">PyTorch</text></g>
+<g><rect x="222" y="358" width="128" height="38" rx="19" fill="#A855F7" fill-opacity=".18" stroke="#A855F7" stroke-opacity=".6" stroke-width="2"/><text x="286" y="383">LangGraph</text></g>
+<g><rect x="362" y="358" width="150" height="38" rx="19" fill="#F472B6" fill-opacity=".18" stroke="#F472B6" stroke-opacity=".6" stroke-width="2"/><text x="437" y="383">XGBoost</text></g>
+<g><rect x="524" y="358" width="112" height="38" rx="19" fill="#34D399" fill-opacity=".18" stroke="#34D399" stroke-opacity=".6" stroke-width="2"/><text x="580" y="383">FastAPI</text></g>
+<g><rect x="648" y="358" width="105" height="38" rx="19" fill="#FBBF24" fill-opacity=".18" stroke="#FBBF24" stroke-opacity=".6" stroke-width="2"/><text x="700.5" y="383">Flutter</text></g>
+<g><rect x="765" y="358" width="100" height="38" rx="19" fill="#8B5CF6" fill-opacity=".18" stroke="#8B5CF6" stroke-opacity=".6" stroke-width="2"/><text x="815" y="383">Docker</text></g>
+<g><rect x="877" y="358" width="95" height="38" rx="19" fill="#06B6D4" fill-opacity=".18" stroke="#06B6D4" stroke-opacity=".6" stroke-width="2"/><text x="924.5" y="383">React</text></g>
+<g><rect x="984" y="358" width="88" height="38" rx="19" fill="#10B981" fill-opacity=".18" stroke="#10B981" stroke-opacity=".6" stroke-width="2"/><text x="1028" y="383">RAG</text></g>
+</g>
+
+<!-- Floating particles -->
+<g opacity=".5">
+<circle cx="1050" cy="120" r="3" fill="#22D3EE"><animate attributeName="cy" values="120;90;120" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;1;.3" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="1100" cy="200" r="2" fill="#A855F7"><animate attributeName="cy" values="200;230;200" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".4;1;.4" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="1070" cy="280" r="4" fill="#F472B6"><animate attributeName="cy" values="280;260;280" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;.9;.3" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- Elite tagline -->
+<text x="600" y="475" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="13" letter-spacing="5" fill="#64748B" font-weight="600">
+DATA ◆ MODEL ◆ API ◆ PRODUCT ◆ EXCELLENCE
+</text>
+</svg>
